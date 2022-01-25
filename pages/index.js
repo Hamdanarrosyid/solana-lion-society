@@ -71,7 +71,7 @@ export default function Home() {
         </section>
 
         {/* about */}
-        <section id='about-section' className='has-text-white v-gradient-style'>
+        <section id='about-section' className='has-text-white v-gradient-style is-flex is-flex-direction-column is-align-items-center'>
           <hr />
           <div className='container has-text-centered my-150'>
             <h2 className='neon-text blue-neon px-5'>About Solana Lion Society</h2>

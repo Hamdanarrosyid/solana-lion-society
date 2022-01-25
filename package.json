@@ -5,8 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "css-build": "node-sass --omit-source-map-url styles/globals.scss"
+    "lint": "next lint"
   },
   "dependencies": {
     "bulma": "^0.9.3",
