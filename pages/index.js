@@ -21,7 +21,7 @@ export default function Home() {
       <main className='is-bg-primary'>
 
         {/* hero section */}
-        <section id='home-section' class="is-flex is-align-items-center" style={{ height: '100vh' }}>
+        <section id='home-section' className="is-flex is-align-items-center" style={{ height: '100vh' }}>
           <div className='container px-5'>
             <div className='columns'>
 
@@ -102,7 +102,7 @@ export default function Home() {
             <div className='is-hidden-desktop my-100'>
               {
                 timelineData.map((value, index) => (
-                  <div className='columns is-gapless marginless px-5' style={{ overflowY: 'hidden', position: 'relative' }}>
+                  <div classkey={index} className='columns is-gapless marginless px-5' style={{ overflowY: 'hidden', position: 'relative' }}>
                     <div className='column'>
                       <div className='timeline'>
                         {index == 0 ? <div className='circle-timeline-start'></div> : index + 1 == timelineData.length && <div className='circle-timeline-end'></div>}
@@ -138,7 +138,7 @@ export default function Home() {
             <div className='is-hidden-mobile my-100'>
               {
                 timelineData.map((value, index) => (
-                  <div className='columns is-gapless marginless'>
+                  <div key={index} className='columns is-gapless marginless'>
                     {
                       (index + 1) % 2 == 1 ? (
                         <div className='column is-5'>
@@ -200,7 +200,7 @@ export default function Home() {
             <div className='columns is-multiline is-gapless'>
               {
                 ['', '', '', '', '', '', '', '', ''].map((_, index) => (
-                  <div className='column is-4 is-flex is-justify-content-center' style={{ margin: '60px 0' }}>
+                  <div key={index} className='column is-4 is-flex is-justify-content-center' style={{ margin: '60px 0' }}>
                     <div className='nft-image shadow-purple-neon'>
                       <Image src='/images/BaseLegend.png' width='300' height='300' alt={`image-${6 + index}`} />
                     </div>

@@ -17,14 +17,14 @@ function MyApp({ Component, pageProps }) {
                 <Image src='/images/Logo.png' alt='logo-solana-lion' layout='fill' width='10' height='60' className='is-rounded' />
               </div>
             </a>
-            <a role="button" onClick={() => setShow(!show)} class={`navbar-burger has-text-white ${show ? 'is-active' : ''}`} style={{ height: 'auto' }} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" onClick={() => setShow(!show)} className={`navbar-burger has-text-white ${show ? 'is-active' : ''}`} style={{ height: 'auto' }} aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
             </a>
           </div>
 
-          <div id="navbarBasicExample" class={`navbar-menu ${show ? 'show' : ''}`}>
+          <div id="navbarBasicExample" className={`navbar-menu ${show ? 'show' : ''}`}>
             <div className='is-hidden-desktop'>
               <div className='navbar-item'>
                 <a class="panel-block has-text-white is-justify-content-center" href='#home-section' onClick={() => setShow(!show)}>
