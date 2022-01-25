@@ -27,16 +27,16 @@ function MyApp({ Component, pageProps }) {
           <div id="navbarBasicExample" className={`navbar-menu ${show ? 'show' : ''}`}>
             <div className='is-hidden-desktop'>
               <div className='navbar-item'>
-                <a class="panel-block has-text-white is-justify-content-center" href='#home-section' onClick={() => setShow(!show)}>
+                <a className="panel-block has-text-white is-justify-content-center" href='#home-section' onClick={() => setShow(!show)}>
                   Home
                 </a>
-                <a class="panel-block has-text-white is-justify-content-center" href='#about-section' onClick={() => setShow(!show)}>
+                <a className="panel-block has-text-white is-justify-content-center" href='#about-section' onClick={() => setShow(!show)}>
                   About
                 </a>
-                <a class="panel-block has-text-white is-justify-content-center" href='#roadmap-section' onClick={() => setShow(!show)}>
+                <a className="panel-block has-text-white is-justify-content-center" href='#roadmap-section' onClick={() => setShow(!show)}>
                   Roadmap
                 </a>
-                <a class="panel-block has-text-white is-justify-content-center" href='#legendary-section' onClick={() => setShow(!show)}>
+                <a className="panel-block has-text-white is-justify-content-center" href='#legendary-section' onClick={() => setShow(!show)}>
                   Legendary
                 </a>
               </div>

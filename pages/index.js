@@ -102,7 +102,7 @@ export default function Home() {
             <div className='is-hidden-desktop my-100'>
               {
                 timelineData.map((value, index) => (
-                  <div classkey={index} className='columns is-gapless marginless px-5' style={{ overflowY: 'hidden', position: 'relative' }}>
+                  <div key={index} className='columns is-gapless marginless px-5' style={{ overflowY: 'hidden', position: 'relative' }}>
                     <div className='column'>
                       <div className='timeline'>
                         {index == 0 ? <div className='circle-timeline-start'></div> : index + 1 == timelineData.length && <div className='circle-timeline-end'></div>}
